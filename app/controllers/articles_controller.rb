@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
   end
   def new
     @article = Article.new
-    @comment = Comments.new
+    @comment = Comment.new
   end
   def create
     @article = Article.new(article_params)
